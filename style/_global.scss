@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$font-main: "Montserrat", sans-serif;
+
+@font-face {
+    font-family: $font-main;
+    src: url(../fonts/Montserrat/Montserrat-SemiBold.ttf) format("opentype"),
+        url(../fonts/Montserrat/Montserrat-ExtraBold.ttf) format("opentype"),
+        url(../fonts/Montserrat/Montserrat-Black.ttf) format("opentype"),
+        url(../fonts/Montserrat/Montserrat-Medium.ttf) format("opentype");
+}
+
+html {
+    font-size: 62.5%;
+
+    @media screen and (max-width: 1800px) {
+        font-size: 37.5%;
+    }
+}
+
+body {
+    font-family: $font-main;
+    letter-spacing: 0.225em;
+    color: #fff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}

@@ -1,0 +1,102 @@
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    &__title {
+        padding: 0.5rem 2.2rem;
+        margin-bottom: 1.3rem;
+        background: #ffffff;
+        color: #000;
+        text-transform: uppercase;
+        letter-spacing: 0.225em;
+        backdrop-filter: blur(4px);
+        @include fontset(7rem, 122%, 900);
+
+        @media screen and (max-width: 700px) {
+            font-size: 4rem;
+        }
+    }
+
+    &__date {
+        @include fontset(1.6rem, 122%, 600);
+        margin-bottom: 3rem;
+        text-transform: uppercase;
+    }
+
+    &__phone {
+        max-width: 27rem;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        @media screen and (max-width: 768px) {
+            max-width: 20rem;
+        }
+
+        @media screen and (max-width: 700px) {
+            display: none;
+        }
+    }
+
+    &__chat {
+        max-width: 34.5rem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        @media screen and (max-width: 768px) {
+            max-width: 28rem;
+        }
+
+        @media screen and (max-width: 700px) {
+            display: none;
+        }
+    }
+
+    &__achieves {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 3rem;
+    }
+
+    &__achieves-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__achieves-number {
+        @include fontset(2.4rem, 122%, 900);
+        text-shadow: 0px 0px 40px rgba(255, 255, 255, 0.45);
+        margin-bottom: 1rem;
+    }
+
+    &__achieves-text {
+        text-transform: lowercase;
+        @include fontset(1.6rem, 122%, 500);
+    }
+
+    &__buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.6rem;
+        margin-bottom: 5rem;
+    }
+
+    &__rating {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5rem;
+    }
+
+    &__rating-text::before {
+        content: url(../img/trustpilot.svg);
+    }
+
+    &__rating-stars {
+        margin-left: 1.6rem;
+        height: 1.6rem;
+    }
+}

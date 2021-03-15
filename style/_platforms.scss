@@ -1,0 +1,99 @@
+.platforms {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 10%;
+    right: 2%;
+
+    @media screen and (min-width: 1600px) {
+        right: -19%;
+    }
+
+    @media screen and (max-width: 1200px) {
+        top: 15%;
+        right: 0;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: max-content;
+
+        &:not(:last-child) {
+            margin-bottom: 6rem;
+        }
+
+        &--item-1 {
+            right: 65%;
+        }
+
+        &--item-2 {
+            right: 50%;
+        }
+
+        &--item-3 {
+            right: 40%;
+        }
+
+        &--item-4 {
+            right: 25%;
+        }
+
+        &--item-5 {
+            right: 20%;
+        }
+
+        &--item-6 {
+            right: 65%;
+            background-color: #1a1c1c;
+            border-radius: 0.4rem;
+            padding: 1rem;
+        }
+
+        @media screen and (max-width: 800px) {
+            right: 0;
+        }
+    }
+
+    &__item-picture {
+        position: absolute;
+        display: block;
+        width: 8rem;
+        margin-right: 2.4rem;
+
+        &--pic-1 {
+            width: 12.3rem;
+            left: -13rem;
+        }
+
+        &--pic-2 {
+            width: 13.8rem;
+            left: -13rem;
+        }
+
+        &--pic-3 {
+            width: 9.7rem;
+            left: -10rem;
+        }
+
+        &--pic-4 {
+            width: 13.8rem;
+            left: -17rem;
+        }
+
+        &--pic-5 {
+            width: 6.4rem;
+            left: -10rem;
+        }
+
+        &--pic-6 {
+            position: relative;
+            width: 6rem;
+        }
+    }
+
+    &__item-text {
+        @include fontset(2.4rem, 122%, 600);
+    }
+}

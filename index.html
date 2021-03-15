@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style/splide.min.css">
+        <link rel="stylesheet" href="./style/style.css" />
+        <script src="./js/splide.min.js"></script>
+        <script src="./js/app.js" defer></script>
+        <title>DMarket test</title>
+    </head>
+    <body class="page page--body">
+
+        
+
+        <picture class="background">
+            <!-- bg image -->
+            <source
+                class="background__img-mobile"
+                srcset="
+                    ./img/bg/mobile/bg-mb@1x.webp 1x,
+                    ./img/bg/mobile/bg-mb@2x.webp 2x
+                "
+                media="(max-width: 475px)"
+            />
+            <source
+                class="background__img-desktop"
+                srcset="./img/bg/bg@1x.webp 1x, ./img/bg/bg@2x.webp 2x"
+                media="(min-width: 475px)"
+            />
+            <img
+                class="background__img"
+                src="./img/bg/bg.webp"
+                alt="background-smoked"
+            />
+            
+        </picture>
+
+        <div class="page__container">
+
+            <div class="page__content">
+
+                <div class="games">
+                    <div class="games__item games__item--rust">
+                        <span class="games__item-text games__item-text--rust">Rust</span>
+                        <picture class="games__item-picture games__item-picture--rust">
+                            <source srcset="./img/games/rust/rust.webp 1x, ./img/games/rust/rust@2x.webp 2x">
+                            <img src="./img/games/rust/rust.webp" alt="rust-img">
+                        </picture>
+                    </div>
+
+                    <div class="games__item games__item--tf">
+                        <span class="games__item-text games__item-text--tf">Team Fortress</span>
+                        <picture class="games__item-picture games__item-picture--tf">
+                            <source srcset="./img/games/tf/tf.webp 1x, ./img/games/tf/tf@2x.webp 2x">
+                            <img src="./img/games/tf/tf.webp" alt="tf-img">
+                        </picture>
+                    </div>
+
+                    <div class="games__item games__item--cs">
+                        <span class="games__item-text games__item-text--cs">CSGO</span>
+                        <picture class="games__item-picture games__item-picture--cs">
+                            <source srcset="./img/games/cs/cs.webp 1x, ./img/games/cs/cs@2x.webp 2x">
+                            <img src="./img/games/cs/cs.webp" alt="cs-img">
+                        </picture>
+                    </div>
+
+                    <div class="games__item games__item--dota">
+                        <span class="games__item-text games__item-text--dota">DotA2</span>
+                        <picture class="games__item-picture games__item-picture--dota">
+                            <source srcset="./img/games/dota/dota.webp 1x, ./img/games/dota/dota@2x.webp 2x">
+                            <img src="./img/games/dota/dota.webp" alt="dota-img">
+                        </picture>
+                    </div>
+                </div>
+
+
+                <div class="platforms">
+                    <div class="platforms__item platforms__item--item-1">
+                        <picture class="platforms__item-picture platforms__item-picture--pic-1">
+                            <source srcset="./img/platforms/dao/dao.webp 1x, ./img/platforms/dao/dao@2x.webp 2x">
+                            <img src="./img/platforms/dao/dao.webp" alt="platform">
+                        </picture>
+                        <span class="platforms__item-text">#DAO</span>
+                    </div>
+                    <div class="platforms__item platforms__item--item-2">
+                        <picture class="platforms__item-picture platforms__item-picture--pic-2">
+                            <source srcset="./img/platforms/defi/defi.webp 1x, ./img/platforms/defi/defi@2x.webp 2x">
+                            <img src="./img/platforms/defi/defi.webp" alt="platform">
+                        </picture>
+                        <span class="platforms__item-text">#DeFI</span>
+                    </div>
+                    <div class="platforms__item platforms__item--item-3">
+                        <picture class="platforms__item-picture platforms__item-picture--pic-3">
+                            <source srcset="./img/platforms/esports/esports.webp 1x, ./img/platforms/esports/esports@2x.webp 2x">
+                            <img src="./img/platforms/esports/esports.webp" alt="platform">
+                        </picture>
+                        <span class="platforms__item-text">eSports</span>
+                    </div>
+
+                    <div class="platforms__item platforms__item--item-4">
+                        <picture class="platforms__item-picture platforms__item-picture--pic-4">
+                            <source srcset="./img/platforms/twitch/twitch.webp 1x, ./img/platforms/twitch/twitch@2x.webp 2x">
+                            <img src="./img/platforms/twitch/twitch.webp" alt="platform">
+                        </picture>
+                        <span class="platforms__item-text">Insta NFT Drops</span>
+                    </div>
+
+                    <div class="platforms__item platforms__item--item-5">
+                        <picture class="platforms__item-picture platforms__item-picture--pic-5">
+                            <source srcset="./img/platforms/insta/insta.webp 1x, ./img/platforms/insta/insta@2x.webp 2x">
+                            <img src="./img/platforms/insta/insta.webp" alt="platform">
+                        </picture>
+                        <span class="platforms__item-text">Twitch NFT Drops</span>
+                    </div>
+                    
+                    <div class="platforms__item platforms__item--item-6">
+                        <picture class="platforms__item-picture platforms__item-picture--pic-6">
+                            <source srcset="./img/platforms/navi/navi.webp 1x, ./img/platforms/navi/navi@2x.webp 2x">
+                            <img src="./img/platforms/navi/navi.webp" alt="platform">
+                        </picture>
+                        <span class="platforms__item-text">NaVi NFT Drops</span>
+                    </div>
+                
+                </div>
+
+
+                <div class="payments">
+                    <span class="payments__text">
+                        Cash in / out
+                    </span>
+                     <div class="payments__items">
+                         <div class="payments__item payments__item--m-right">
+                             <picture class="payments__item-picture">
+                                 <img class="payment__item-img" src="./img/payments/skrill.svg" alt="skrill-payment">
+                             </picture>
+                         </div>
+                         <div class="payments__item">
+                             <picture class="payments__item-picture">
+                                 <img class="payment__item-img" src="./img/payments/neteller.svg" alt="neteller-payment">
+                             </picture>
+                         </div>
+                         <div class="payments__item payments__item--m-left">
+                             <picture class="payments__item-picture payments__item-picture--height-fix">
+                                 <img class="payment__item-img" src="./img/payments/paypal.svg" alt="paypall-payment">
+                             </picture>
+                         </div>
+                     </div>
+                </div>
+                
+                
+                <div class="footer-content">
+                    <!-- bg phone img -->
+                    <picture class="footer-content__phone">
+                        <source
+                            class="footer-content__phone-default"
+                            srcset="
+                                ./img/bg/phone/bg__phone.webp    1x,
+                                ./img/bg/phone/bg__phone@2x.webp 2x
+                            "
+                        />
+                        <img src="./img/bg/phone/bg__phone.webp" alt="bg_phone" />
+                    </picture>
+                    <picture class="footer-content__chat">
+                        <source srcset="./img/bg/chat/chat.webp 1x, ./img/bg/chat/chat@2x.webp 2x">
+                        <img src="./img/bg/chat/chat.webp" alt="chat-img">
+                    </picture>
+                    <h1 class="footer-content__title">Nft metaverse</h1>
+                    <span class="footer-content__date">Since 2017</span>
+                    <div class="footer-content__achieves">
+                        <div class="footer-content__achieves-item">
+                            <span class="footer-content__achieves-number"
+                                >1 000 000 +</span
+                            >
+                            <span class="footer-content__achieves-text"
+                                >skins on the market</span
+                            >
+                        </div>
+                        <div class="footer-content__achieves-item">
+                            <span class="footer-content__achieves-number"
+                                >40 000 000 +</span
+                            >
+                            <span class="footer-content__achieves-text"
+                                >blockchain transactions pulled</span
+                            >
+                        </div>
+                        <div class="footer-content__achieves-item">
+                            <span class="footer-content__achieves-number"
+                                >10 089 435+</span
+                            >
+                            <span class="footer-content__achieves-text"
+                                >closed deals</span
+                            >
+                        </div>
+                    </div>
+                    <div class="footer-content__buttons">
+                        <button class="footer-content__btn page__btn page__btn--yellow">Get drops!</button>
+                        <button class="footer-content__btn page__btn page__btn--green">Trade now</button>
+                    </div>
+                    <div class="footer-content__rating">
+                        <span class="footer-content__rating-text"></span>
+                        <div class="footer-content__rating-stars">
+                            <img src="./img/trust-star.svg" alt="trustpilot-star">
+                            <img src="./img/trust-star.svg" alt="trustpilot-star">
+                            <img src="./img/trust-star.svg" alt="trustpilot-star">
+                            <img src="./img/trust-star.svg" alt="trustpilot-star">
+                            <img src="./img/trust-star.svg" alt="trustpilot-star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
