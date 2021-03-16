@@ -1,17 +1,41 @@
 .platforms {
-    position: absolute;
     display: flex;
-    flex-direction: column;
-    top: 10%;
-    right: 2%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 3rem;
 
-    @media screen and (min-width: 1600px) {
-        right: -19%;
-    }
-
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1200px) and (min-width: 769px) {
         top: 15%;
         right: 0;
+    }
+
+    @media screen and (min-width: 769px) {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 10%;
+        right: 2%;
+    }
+
+    // @media screen and (min-width: 1600px) {
+    //     right: -19%;
+    // }
+
+    @media screen and (max-width: 768px) {
+        margin-bottom: auto;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba($color: #020a16, $alpha: 0.7);
+            filter: blur(3rem);
+        }
     }
 
     &__item {
@@ -20,80 +44,107 @@
         position: relative;
         width: max-content;
 
-        &:not(:last-child) {
+        @media screen and (min-width: 1025px) {
             margin-bottom: 6rem;
         }
 
-        &--item-1 {
-            right: 65%;
-        }
+        @media screen and (min-width: 769px) {
+            &:not(:last-child) {
+                margin-bottom: 4rem;
+            }
 
-        &--item-2 {
-            right: 50%;
-        }
+            &--item-1 {
+                right: 65%;
+            }
 
-        &--item-3 {
-            right: 40%;
-        }
+            &--item-2 {
+                right: 50%;
+            }
 
-        &--item-4 {
-            right: 25%;
-        }
+            &--item-3 {
+                right: 40%;
+            }
 
-        &--item-5 {
-            right: 20%;
-        }
+            &--item-4 {
+                right: 25%;
+            }
 
-        &--item-6 {
-            right: 65%;
-            background-color: #1a1c1c;
-            border-radius: 0.4rem;
-            padding: 1rem;
+            &--item-5 {
+                right: 20%;
+            }
+
+            &--item-6 {
+                right: 65%;
+                background-color: #1a1c1c;
+                border-radius: 0.4rem;
+                padding: 1rem;
+            }
         }
 
         @media screen and (max-width: 800px) {
+            flex-direction: column;
             right: 0;
         }
     }
 
     &__item-picture {
-        position: absolute;
         display: block;
-        width: 8rem;
-        margin-right: 2.4rem;
+        // max-width: 6rem;
 
-        &--pic-1 {
-            width: 12.3rem;
-            left: -13rem;
+        @media screen and (min-width: 769px) {
+            position: absolute;
+            // width: 8rem;
+            margin-right: 2.4rem;
+
+            &--pic-1 {
+                width: 12.3rem;
+                left: -13rem;
+            }
+
+            &--pic-2 {
+                width: 13.8rem;
+                left: -13rem;
+            }
+
+            &--pic-3 {
+                width: 9.7rem;
+                left: -10rem;
+            }
+
+            &--pic-4 {
+                width: 13.8rem;
+                left: -17rem;
+            }
+
+            &--pic-5 {
+                width: 6.4rem;
+                left: -10rem;
+            }
+
+            &--pic-6 {
+                position: relative;
+                width: 6rem;
+            }
         }
 
-        &--pic-2 {
-            width: 13.8rem;
-            left: -13rem;
+        @media screen and (max-width: 768px) {
+            max-width: 12rem;
         }
 
-        &--pic-3 {
-            width: 9.7rem;
-            left: -10rem;
-        }
-
-        &--pic-4 {
-            width: 13.8rem;
-            left: -17rem;
-        }
-
-        &--pic-5 {
-            width: 6.4rem;
-            left: -10rem;
-        }
-
-        &--pic-6 {
-            position: relative;
-            width: 6rem;
+        @media screen and (max-width: 564px) {
+            max-width: 6rem;
         }
     }
 
     &__item-text {
         @include fontset(2.4rem, 122%, 600);
+
+        @media screen and (max-width: 768px) {
+            margin-top: 2rem;
+        }
+
+        @media screen and (max-width: 564px) {
+            @include fontset(1.8rem, 122%, 500);
+        }
     }
 }
